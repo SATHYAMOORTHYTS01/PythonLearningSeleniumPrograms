@@ -12,7 +12,7 @@ from selenium.webdriver.common.by import By
 
     "Verify the URL changes"
 )
-def test_open_katalon():
+def test_Mini_Project_4():
     webdriver.Edge()
     chrome_options = Options()
     # chrome_options.add_argument("--headless")
