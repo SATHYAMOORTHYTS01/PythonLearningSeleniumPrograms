@@ -43,4 +43,4 @@ def test_open_vwologin():
     sign_in_button = driver.find_element(By.ID, "js-login-btn")
     sign_in_button.click()
 
-    time.sleep(10)
+    time.sleep(15)

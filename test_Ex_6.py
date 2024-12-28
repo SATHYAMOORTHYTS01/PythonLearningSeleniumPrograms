@@ -5,6 +5,7 @@ from selenium.webdriver.chrome.options import Options  # Import Options
 import time
 from selenium.webdriver.common.by import By
 
+
 @pytest.mark.positive
 @allure.title("Verify that url changes when we click on the Make appointment button ")
 @allure.description(

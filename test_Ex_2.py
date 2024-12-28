@@ -10,6 +10,7 @@ def test_open_vwologin():
 
     # Print the session ID
 
+
     print(driver.session_id)  #6cf4f01aebd392ca09dc70075790411a
     driver.get("https://app.vwo.com")
     print(driver.title)
