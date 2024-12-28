@@ -3,7 +3,6 @@ from selenium.webdriver.chrome import session_id
 from selenium.webdriver.chrome.options import Options  # Import Options
 import time
 
-
 def test_open_vwologin():
     # Options class - used to customize the behavior of the ChromeDriver
     chrome_options = Options()
