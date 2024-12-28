@@ -23,6 +23,14 @@ def test_open_katalon():
 
     # find the element
     # we need to find the unique attribute
+    # approach of finding element
+    # first go with id => ame - > classname -> link -> ccss selctor -> x path
+    # <input
+    # type = "email"
+    # class ="text-input W(100%)"
+    # name="username"
+    # id="login-username"
+    # data-qa="hocewoqisi" >
 
     make_appointment_element = driver.find_element("id", "btn-make-appointment")
     # click on it
@@ -31,3 +39,4 @@ def test_open_katalon():
     assert driver.current_url == "https://katalon-demo-cura.herokuapp.com/profile.php#login"
     time.sleep(10)
     driver.quit()
+
