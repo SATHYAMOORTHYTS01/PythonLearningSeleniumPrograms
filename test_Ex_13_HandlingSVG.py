@@ -13,7 +13,6 @@ def test_flipkart_search_AC():
     driver = webdriver.Edge()
     driver.maximize_window()
     driver.get("https://www.flipkart.com/")
-    driver.maximize_window()
 
     search_input = driver.find_element(By.XPATH, "//input[@type='text']")
     search_input.send_keys("AC")

@@ -20,8 +20,8 @@ def test_flipkart_search_AC():
     time.sleep(5)
 
     states = driver.find_elements(By.XPATH, "//*[name()='svg']"
-                                              "/*[name()='g'][7]/*[name()='g']/*[name()='g']/*[name("
-                                              ")='path']")
+                                            "/*[name()='g'][7]/*[name()='g']/*[name()='g']/*[name("
+                                            ")='path']")
 
     for state in states:
 
