@@ -6,13 +6,12 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from allure_commons.types import AttachmentType
 
-
 @pytest.mark.positive
-@allure.title("Verify that url changes when we click on the Make appointment button ")
+@allure.title("Verify the invalid login with the excel Testdata")
 @allure.description(
-    "Verify the URL changes"
+    "TC#1 invaldi login check on vwo.login.com"
 )
-def test_open_vwo_login():
+def test_vwo_login_com():
     driver = webdriver.Edge()
     driver.maximize_window()
     driver.get("https://app.vwo.com/#/login")
@@ -40,5 +39,3 @@ def test_open_vwo_login():
 
     finally:
         driver.close()
-
-    WebDriverWait(driver, timeout=10).until(EC.visibility_of_element_located((BY.ID,)))

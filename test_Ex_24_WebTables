@@ -1,0 +1,19 @@
+import time
+import allure
+import pytest
+from allure_commons.types import AttachmentType
+from selenium import webdriver
+
+
+@pytest.mark.positive
+@allure.title("Shadow DOM")
+@allure.description(
+    "Input the value in pizza name"
+)
+def test_flipkart_search_AC():
+    driver = webdriver.Edge()
+    driver.maximize_window()
+
+    # Open the URL
+    driver.get('https://selectorshub.com/xpath-practice-page/')
+

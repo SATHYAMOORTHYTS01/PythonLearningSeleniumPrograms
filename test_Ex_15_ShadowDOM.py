@@ -24,6 +24,8 @@ def test_flipkart_search_AC():
 
     username.send_keys("Sathya")
 
+    time.sleep(5)
+
     # Use JavaScript to locate the element in the Shadow DOM
     pizza = driver.execute_script("""
         return document.querySelector('div.jackPart')

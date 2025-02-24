@@ -13,8 +13,5 @@ def test_open_vwologin():
     time.sleep(10)
     driver.quit()
 
-
     # quit - will close all teh tab's
     # close - closes the current tab alone
-
-

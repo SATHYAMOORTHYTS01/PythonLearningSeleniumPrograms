@@ -1,6 +1,7 @@
 import allure
 import pytest
 from selenium import webdriver
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
 
@@ -18,4 +19,12 @@ def test_flipkart_search_AC():
     search_input.send_keys("AC")
 
     svg_list = driver.find_element(By.XPATH, "//*[local-name()='svg']")
-    svg_list[0].click()
+    actions = ActionChains(driver)
+    actions.move_to_element(svg_list).click().perform()
+
+
+
+
+
+
+

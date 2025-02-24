@@ -4,6 +4,7 @@ import allure
 import pytest
 from allure_commons.types import AttachmentType
 from selenium import webdriver
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
 
@@ -22,6 +23,8 @@ def test_flipkart_search_AC():
     states = driver.find_elements(By.XPATH, "//*[name()='svg']"
                                             "/*[name()='g'][7]/*[name()='g']/*[name()='g']/*[name("
                                             ")='path']")
+    actions = ActionChains(driver)
+    actions.move_to_element(states).click().perform()
 
     for state in states:
 
