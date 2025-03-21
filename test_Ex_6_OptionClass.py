@@ -15,10 +15,12 @@ from selenium.webdriver.common.by import By
 def test_Mini_Project_4():
     webdriver.Edge()
     chrome_options = Options()
-    # chrome_options.add_argument("--headless")
+    #chrome_options.add_argument("--headless")
     driver = webdriver.Chrome(chrome_options)
     driver.back()
+    time.sleep(5)
     driver.refresh()
+    time.sleep(5)
     driver.forward()
     chrome_options.add_argument("--page-load-strategy=none")
     driver.get("https://katalon-demo-cura.herokuapp.com/")

@@ -41,4 +41,3 @@ def test_open_vwo_login():
     finally:
         driver.close()
 
-    WebDriverWait(driver, timeout=10).until(EC.visibility_of_element_located((BY.ID,)))

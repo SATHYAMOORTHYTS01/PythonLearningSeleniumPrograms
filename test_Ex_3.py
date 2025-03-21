@@ -5,6 +5,8 @@ import time
 
 
 def test_open_vwologin():
+
+
     # Options class - used to customize the behavior of the ChromeDriver
     chrome_options = Options()
     chrome_options.add_argument("--headless")  # Start the browser in incognito mode
