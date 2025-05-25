@@ -1,4 +1,4 @@
-import allure
+import allure_commons
 import pytest
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -8,8 +8,8 @@ from allure_commons.types import AttachmentType
 from selenium.webdriver.support.ui import Select
 
 @pytest.mark.positive
-@allure.title("Verify that  url changes")
-@allure.description(
+@allure_commons.title("Verify that  url changes")
+@allure_commons.description(
     "Verify the URL changes"
 )
 def test_vwo_login_select():
@@ -21,7 +21,7 @@ def test_vwo_login_select():
 
     select = Select(element_dropdown)
 
-    select.select_by_index("0")
+    select.select_by_index(0)
 
 
     # Types of dropdowns

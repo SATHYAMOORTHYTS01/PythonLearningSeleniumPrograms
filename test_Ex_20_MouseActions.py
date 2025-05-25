@@ -21,5 +21,4 @@ def test_019_actions():
     #Actions Builders - Mouse interations
 
     actions_builders = ActionBuilder(driver)
-    actions_builders.pointer_action.pointer_up(MouseButton.BACK)
-    actions_builders.perform()
+    actions_builders.pointer_action.pointer_up(MouseButton.BACK).perform()
